@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c"
+        tools:context=".MainActivity"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+
+
+    app:srcCompat="@drawable/chatify1"
+    app:layout_constraintTop_toTopOf="parent"
+
+
+/>
+
+
+    <EditText
+        android:id="@+id/firstnametextfield"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="text"
+        android:textColor="#cccc"
+        android:text="First Name"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/lastnametextfield"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="text"
+        android:textColor="#cccc"
+        android:text="Last Name"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstnametextfield" />
+
+    <EditText
+        android:id="@+id/emailtextfield"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#cccc"
+        android:text="Email"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnametextfield" />
+
+    <EditText
+        android:id="@+id/passworftextfield"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="textVisiblePassword"
+        android:textColor="#cccc"
+        android:text="Pasword"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextfield" />
+
+    <EditText
+        android:id="@+id/retypepassworftextfield"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="textVisiblePassword"
+        android:textColor="#cccc"
+        android:text="Retype Pasword"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passworftextfield" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/retypepassworftextfield"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        >
+        <RadioButton
+            android:id="@+id/maleradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:textColor="#cccc"
+
+            android:text="Male"
+
+            />
+
+        <RadioButton
+            android:id="@+id/femaleradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:textColor="#cccc"
+            android:text="Female"
+
+            android:layout_marginLeft="30dp"
+
+            />
+    </RadioGroup>
+
+   <LinearLayout
+       android:id="@+id/linear_buttons"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="20dp"
+       app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent">
+        <Button
+            android:id="@+id/signup"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#cccc"
+            android:background="@drawable/rounded_button"
+            android:text="SIGNUP"
+            android:onClick="@secondActivity"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+
+
+            />
+        <Button
+            android:id="@+id/exitbutton"
+            android:onClick="@exitApplication"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Exit"
+            android:textColor="#E7190C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/linear_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Already have an account? "
+        android:textSize="20dp"
+        android:textColor="#cccc"
+        android:paddingTop="5dp"
+        android:linksClickable="true"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
