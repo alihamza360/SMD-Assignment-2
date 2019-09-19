@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/UserName"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/setting"
+
+        />
+
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_width="113dp"
+        android:layout_height="114dp"
+        android:layout_below="@id/userId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="@+id/userId"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/dog"
+
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginRight="-68dp"
+        android:text="3124 \n posts "
+
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginRight="-140dp"
+        android:text="3124 \n followers "
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginRight="-210dp"
+        android:text="3124 \n following "
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/dp"
+        android:layout_toRightOf="@+id/dp"
+        android:text="Edit Profile" />
+
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="-140dp"
+        android:text="Your Name " />
+
+    <TextView
+        android:id="@+id/textView4"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/Biography" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="-192dp"
+
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
+
+
+</RelativeLayout>
